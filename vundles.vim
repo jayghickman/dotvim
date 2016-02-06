@@ -15,6 +15,9 @@ Bundle 'chriskempson/base16-vim'
 " General
 if count(g:vundles, 'general')
   Bundle 'scrooloose/nerdtree'
+  Bundle 'chriskempson/base16-vim'
+  Bundle 'chriskempson/base16-shell'
+  let g:base16_shell_path= $HOME.'/.vim/bundle/base16-shell'
   Bundle 'YankRing.vim'
   let g:yankring_history_dir = $HOME.'/.vim/'
   let g:yankring_history_file = '.yankring_history'
@@ -27,7 +30,8 @@ if count(g:vundles, 'general')
   Bundle 'mbbill/undotree'
   Bundle 'mhinz/vim-signify'
   Bundle 'Raimondi/delimitMate'
-  Bundle 'bling/vim-airline'
+  Bundle 'vim-airline/vim-airline'
+  Bundle 'vim-airline/vim-airline-themes'
   Bundle 'rodjek/vim-puppet'
 endif
 

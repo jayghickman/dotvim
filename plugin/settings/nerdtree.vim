@@ -12,6 +12,7 @@
 nmap <F4> :NERDTreeTabsToggle<CR>
 " ,p to show current file in the tree
 nmap <leader>p :NERDTreeFind<CR>
+map <C-m> :NERDTreeToggle<CR>
 
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 
@@ -28,4 +29,3 @@ function! s:CloseIfOnlyNerdTreeLeft()
 endfunction
 
 let NERDTreeIgnore = ['\.pyc$']
-
